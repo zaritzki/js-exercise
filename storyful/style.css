@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 5rem;
+    display: block;
+}
+h1 {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #ccc;
+}
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+}
+.books {
+    width: 50%;
+}
+.results {
+    width: 40%;
+    height: 30%;
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #f2f2f2;
+}
+.books h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.books h3:first-child {
+    margin-top: 0;
+}
+.books ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.books li {
+    margin-left: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.books li.active {
+    font-weight: 600;
+}
+
+.books li input {
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+.books li input[type="number"] {
+    width: 3rem;
+    text-align: center;
+}
+
+h1,
+.results h2,
+.results h3,
+.results h4 {
+    display: flex;
+    justify-content: space-between;
+}
+.results h3 {
+    margin-bottom: 0.6rem;
+}
+.results .selectedBooks {
+    margin-bottom: 2rem;
+}
+.results .discount {
+    color: #cc2222;
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
