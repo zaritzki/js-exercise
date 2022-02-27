@@ -317,7 +317,7 @@ const displayBooks = () => {
 		$books.appendChild($h3);
 
 		// Lists down all the books
-		var bookHTML =
+		const bookHTML =
 			'<ul key="' + bookData.id + '">' +
 			allBooks.map((book) => {
 					return `<li>
