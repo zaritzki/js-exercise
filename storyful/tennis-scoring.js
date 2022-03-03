@@ -36,9 +36,6 @@ const getScoreInText = (score) => {
         case 3:
             return 'Forty'
             break;
-        case 4:
-            return 'Game'
-            break;
     }
 }
 
