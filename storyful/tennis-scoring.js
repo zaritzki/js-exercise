@@ -69,25 +69,25 @@ const getGameDecision = (diffScore, isHomePlayerUp) => {
 
 
 score = [2, 1]
-console.log('Test 1 ' + getScore());
+console.log('[2, 1]: ' + getScore());
 
 score = [3, 0]
-console.log('Test 2 ' + getScore());
+console.log('[3, 0]: ' + getScore());
 
 score = [3, 3]
-console.log('Test ' + getScore());
+console.log('[3, 3]: ' + getScore());
 
 score = [4, 3] // advantage Home situation
-console.log('Test ' + getScore());
+console.log('[4, 3]: ' + getScore());
 
 score = [3, 4] // advantage Away situation
-console.log('Test ' + getScore());
+console.log('[3, 4]: ' + getScore());
 
 score = [4, 2] // game situation
-console.log('Test Game ' + getScore());
+console.log('[4, 2]: ' + getScore());
 
 score = [4, 4] // deuce
-console.log('Test ' + getScore());
+console.log('[4, 4]: ' + getScore());
 
 score = [5, 3] // game + advantage Home situation
-console.log('Test ' + getScore());
+console.log('[5, 3]: ' + getScore());
