@@ -76,13 +76,17 @@ const getJaneDoeBank = bankAccounts[getJaneDoeDetails[0].accountId];
 janesDetails = [...getJaneDoeDetails, getJaneDoeBank];
 
 // 2. American customers
-let americanCustomerNames = [];
 const getAmericanCustomers = bankCustomers.map((customer) => {
+	let americanCustomerNames = '';
 	if ( customer.address.country === 'USA') {
-		americanCustomerNames.push(customer.firstName + ' ' + customer.lastName);
+		americanCustomerNames += customer.firstName + ' ' + customer.lastName;
 	}
+	return americanCustomerNames;
 });
-americanCustomers = americanCustomerNames;
+const cleanAmericanCustomers = getAmericanCustomers.filter(el => {
+	return el !== '';
+});
+americanCustomers = cleanAmericanCustomers;
 
 // 3. Joes bank balance
 const getJoeSoapDetails = [bankCustomers[0]]; 
